@@ -1,4 +1,4 @@
-# Code Refactor Starter Code
+# Horiseon
 
 Live URL:https://eidancervantes.github.io/Horiseon/
 
