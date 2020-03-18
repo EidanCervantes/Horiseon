@@ -8,6 +8,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* fixed syntax on font family property list values for entire sheet*/
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,10 +21,12 @@ header h1 {
     font-size: 48px;
 }
 
+/* thought id selector might be more appropriate*/
 #seo {
     color: #d9dcd6;
 }
 
+/*replaced div with nav*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -59,25 +62,13 @@ p {
     background-position: center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-    max-height: 200px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-    max-height: 200px;
-}
-
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-/* consolidated styles for all content boxes */
+/* consolidated styles for all content boxes as well as headers */
 .content-box {
     margin-bottom: 20px;
     padding: 50px;
@@ -87,10 +78,22 @@ p {
     color: #ffffff;
 }
 
-/* selector for all h2 elements in content class rather than one for each*/
-.content h2 {
+.content-box h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+/* moved content img attributes to float-left/right selectors*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+    max-height: 200px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+    max-height: 200px;
 }
 
 .benefits {
@@ -104,49 +107,18 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* consolidated benefit styles*/
+.benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
